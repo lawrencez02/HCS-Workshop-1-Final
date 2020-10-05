@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Experience.css";
+import "./Education.css";
 
 function TimeLineItem(props) {
   return (
@@ -10,42 +10,49 @@ function TimeLineItem(props) {
         props.setActiveDescription(props.description);
       }}
     >
-      <div className="experience-info">
+      <div className="education-info">
         <h4>{props.title}</h4>
       </div>
     </div>
   );
 }
 
-export default function ExperienceScreen() {
+export default function EducationScreen() {
   const [activeTitle, setActiveTitle] = useState("");
   const [activeDescription, setActiveDescription] = useState("");
 
   return (
     <div className="screen-background">
-      <div className="experience-background">
+      <div className="education-background">
         <div className="timeline-background">
           <TimeLineItem
-            title="CBE Analyst"
-            description="
-            Developing growth and customer acquisition strategy with large e-commerce logistics company."
+            title="Harvard University"
+            description="Expected Graduation Date: May 2024
+            Anticipated Concentration: Applied Mathematics, Economics and Computer Science
+
+            Courses: Mathematics 25a (Theoretical Linear Algebra), Economics 1011a (Intermediate Microeconomics: Advanced), Statistics 110 (Introduction to Probability), Computer Science 50 (Introduction to Computer Science)
+            
+            GPA: ./4.0"
             setActiveTitle={setActiveTitle}
             setActiveDescription={setActiveDescription}
           />
           <TimeLineItem
-            title="HUEA Associate"
-            description="Develop economics programming for the Harvard community and economics outreach to high school students worldwide."
+            title="The University of Alabama in Huntsville"
+            description="High-school dual enrollment in advanced mathematics and computer science classes. 
+            GPA: 4.0/4.0"
             setActiveTitle={setActiveTitle}
             setActiveDescription={setActiveDescription}
           />
           <TimeLineItem
-            title="First-Year Social Committee Member"
-            description="Organize social events for the Harvard freshman class with the Dean of Students Office."
+            title="James Clemens High School"
+            description="Valedictorian out of class of 450. 
+            GPA: 4.0/4.0
+            ACT: 36/36"
             setActiveTitle={setActiveTitle}
             setActiveDescription={setActiveDescription}
           />
         </div>
-        <div className="highlight-background">
+        <div className="highlight-background-new">
           <h1>{activeTitle}</h1>
           <p>{activeDescription}</p>
         </div>

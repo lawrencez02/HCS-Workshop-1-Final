@@ -5,14 +5,14 @@ export default function ProjectsScreen() {
   return (
     <div className="screen-background">
       <Project
-        title="Machine Learning"
-        description="I made a machine learn"
-        link="https://google.com"
+        title="CS50 Final Project"
+        description="Will create soon."
+        link="http://localhost:3000/"
       />
       <Project
         title="Personal Portfolio"
-        description="This website!!"
-        link="https://bing.com"
+        description="This website! Work in progress."
+        link="http://localhost:3000/"
       />
     </div>
   );

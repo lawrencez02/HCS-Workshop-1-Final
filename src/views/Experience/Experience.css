@@ -25,12 +25,12 @@
   width: 24px;
   height: 24px;
   border-radius: 12px;
-  background: crimson;
+  background: aqua;
 }
 
 .experience-info {
   padding: 24px;
-  font-size: 10pt;
+  font-size: 15pt;
 }
 
 .experience-info h4,
@@ -43,7 +43,7 @@ p {
   flex-direction: column;
   width: 50%;
   height: calc(100%);
-  background: crimson;
+  background: aqua;
   position: -webkit-sticky;
   position: sticky;
   top: 48px;
